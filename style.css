@@ -1,0 +1,759 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    font-family: gilroy;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page1{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(28,29,29);
+}
+
+#page1left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
+
+#navleft{
+    height: 15vh;
+    width: 100%;
+    /* background-color: black; */
+    align-items: center;
+    text-align: center;
+    padding-top: 95px;
+    padding-left: 400px;
+}
+
+#square{
+    z-index: 9999;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    height: 120px;
+    width: 120px;
+    border: 2px solid white;
+    padding-top: 12px;
+}
+
+#square>h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#square>h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#navleft i{
+    position: absolute;
+    left: 30%;
+    top: 6%;
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+}
+
+#navleft a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 80px;
+}
+
+#icon{
+    display:flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 120px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 700px;
+    width: 200px;
+    text-align: center;
+}
+
+#icon i{
+    color: white;
+    font-size: 25px;   
+}
+
+#rectangle{
+    margin-top: -21%;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    height: 300px;
+    width: 150px;
+    background-color: rgb(226,145,0);
+}
+
+#page1left>h1{
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 31%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: 9px;
+}
+
+#page1left>h2{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+#page1left>h3{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.432);
+}
+
+#page1left h3 span{
+    color: rgb(226,145,0);
+}
+
+/* #page1left h3:nth-child(2){
+    color: gold;
+} */
+
+#page1left button{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    padding: 20px 80px;
+    border-color: rgb(226,145,0);
+    color: white;
+    scale: 1;
+    transition: .5s;
+    opacity: 0;
+}
+
+#page1left button:hover{
+    scale: 1.1;
+    background-color: rgb(226,145,0);
+}
+
+
+#page1right{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 60%;
+    background-image: url(jordan_files/mercedes5.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    animation-name: sliders;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+
+/* #page1right img{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+} */
+
+/* #page1right img:hover{
+    scale: 1.2;
+} */
+
+
+@keyframes sliders {
+    0%{
+        background-image: url(jordan_files/mercedes5.jpg);
+    }
+    50%{
+        background-image: url(jordan_files/mercedes4.jpg);
+    }
+    100%{
+        background-image: url(jordan_files/mercedes10.jpg);
+    }
+}
+
+#navright{
+    position: absolute;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 95px;
+    padding-right: 600px;
+}
+
+#navright a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 600;
+    padding-right: 80px;
+}
+
+#rectangle2{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: 5%;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(226,145,0);
+}
+
+#rectangle2 i{
+    color: #fff;
+    margin-right: 20px;
+    padding: 12px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+#rectangle2 h1{
+    padding-top: 12px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+#icon2{
+    position: absolute;
+    top: 88%;
+    left: 35%;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#icon2 i{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    padding-left: 20px;
+}
+
+#icon2 i:nth-child(3){
+    color: rgb(226,145,0);
+}
+
+#icon2 i:nth-child(4){
+    color: rgb(226,145,0);
+}
+
+#page2{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(28,29,29);
+}
+
+#page2>h1{
+    position: absolute;
+    top: 15%;
+    left: -2%;
+    text-transform: uppercase;
+    font-size: 500px;
+    color: rgba(0, 0, 0, 0.267);
+}
+
+#page2nav{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+}
+
+#p2navleft{
+    height: 100%;
+    width: 40%;
+}
+
+#p2navleft h1{
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-left: 10%;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+}
+
+#p2navright{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 60%;
+    padding-top: 70px;
+    padding-left: 200px;
+    gap: 30px;
+}
+
+#p2navright i{
+    padding-left: 1px;
+    font-size: 20px;
+    color: white;
+    opacity: .6;
+}
+
+#p2navright h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#p2navright button{
+    position: absolute;
+    left: 63%;
+    top: 30%;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 70px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(226,145,0);
+}
+
+#cards{
+    position: relative;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding-left: 90vw;
+    padding-right: 500px;
+    /* margin-right: 200px; */
+    overflow: auto;
+}
+
+#cards::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    position: relative;
+    height: 550px;
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.card img{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: 200px;
+}
+
+.card #two{
+    height: 125px;
+    top: 27%;
+    left: 12%;
+}
+
+.card h1{
+    position: absolute;
+    top: 67%;
+    left: 20%;
+    font-size: 30px;
+    color: #fff;
+}
+
+.card h2{
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.448);   
+}
+
+.card h2 span{
+    left: 35%;
+}
+
+.card h3{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.615);
+    top: 83%;
+    left: 15%;
+}
+
+/* #cards h3:nth-child(2){
+    color: gold;
+} */
+
+.card button{
+    position: absolute;
+    top: 82.5%;
+    left: 55%;
+    color: rgb(226,145,0);
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 550;
+    border: none;
+}
+
+.card i{
+    position: absolute;
+    top: 83%;
+    left: 90%;
+    font-size: 25px;
+    color: rgb(226,145,0);
+}
+
+#p2bottom{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+}   
+
+#p2bottom i{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.483);
+}
+
+#p2bottom #one{
+    opacity: .8;
+}
+
+#p2bottom h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+#p2bottom h2{
+    font-size: 300px;
+    font-weight: 100;
+    opacity: .8;
+    color: rgba(255, 255, 255, 0.438);
+}
+
+#p2bottom h3{
+    font-size: 35px;
+    opacity: .8;
+    color: rgba(255, 255, 255, 0.492);
+}
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(28,29,29);
+}
+
+#page3>h1{
+    position: absolute;
+    top: 40%;
+    left: 65.6%;
+    text-transform: uppercase;
+    color: rgb(226,145,0);
+    font-size:24px;
+    font-weight: 500;
+}
+
+#page3>i{
+    position: absolute;
+    top: 40%;
+    left: 74%;
+    text-transform: uppercase;
+    color: rgb(226,145,0);
+    font-size:25px;
+    font-weight: 500;
+}
+
+#div1{
+    overflow: hidden;
+    z-index: 9999;
+    height: 500px;
+    width: 1000px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: #fff;
+}
+
+#div1 img{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+#div1 img:hover{
+    scale: 1.1;
+}
+
+#div3{
+    z-index: 99999;
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    top: 19%;
+    left: 56%;
+    background-color: rgb(226,145,0);
+}
+
+#div3 h1{
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    left: 60%;
+    top: 25%;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+#div2{
+    overflow: hidden;
+    height: 450px;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    /* background-color: black; */
+}
+
+#div2 img{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+#div2 img:hover{
+    scale: 1.1;
+}
+
+#div4{
+    height: 400px;
+    width: 900px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+#div4 h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 140px;
+    margin-bottom: 30px;
+}
+
+#div4 h2{
+    color: rgba(255, 255, 255, 0.637);
+    width: 96%;
+    font-size: 18px;
+    padding-left: 16%;
+    padding-top: 20px;
+}
+
+#div5{
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+}
+
+#div5 i{
+    position: absolute;
+    top: 35%;
+    left: 128px;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.458);
+}
+
+#div5 #one{
+    left: 46.5%;
+}
+
+#div5 #two{
+    left: 75.5%;
+}
+
+#div5>h1{
+    padding-top: 30px;
+    padding-left: 170px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    color: #fff;
+}
+
+#page4{
+    overflow: hidden;
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    background-color: rgb(28,29,29);
+    
+}
+
+#page4>h1{
+    position: absolute;
+    left: -4%;
+    font-size: 440px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.267);
+    text-transform: uppercase;
+}
+
+#p4div1{
+    position: absolute;
+    top: 38%;
+    left: 15%;
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+}
+
+#p4div1 h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+#p4div1 h1 span{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+#page4>h2{
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.34);
+}
+
+#page4>h3{
+    position: absolute;
+    left: 67%;
+    top: 80%;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.34);
+}
+
+#p4div2{
+    position: absolute;
+    left: 30%;
+    top: 31%;
+    height: 350px;
+    width: 350px;
+    padding-top: 200px;
+    padding-right: 30px;
+}
+
+#p4div2>h1{
+    position: absolute;
+    left: 10%;
+    top: 9%;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+#p4div2 h1 span{
+    font-weight: 600;
+}
+
+#p4div2 i{
+    color: rgba(255, 255, 255, 0.497);
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+#p4div3{
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 80px;
+    left: 55%;
+    top: 20%;
+    height: 400px;
+    width: 600px;
+    /* background-color: #fff; */
+}
+
+#p4div3 input{
+    padding: 20px;
+    padding-left: 70px;
+    /* padding-top: 30px; */
+    color: white;
+    border-color: rgba(255, 255, 255, 0.486);
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+#p4div3 #one{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    padding: 55px;
+    font-size: 15px;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.486);
+    background-color: transparent;
+}
+
+#p4div3 button{
+    left: 300px;
+    position: absolute;
+    padding: 20px 124px;
+    background-color: rgb(226,145,0);
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+}
